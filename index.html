@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen">
+    <h1>Tic Tac Toe Game</h1>
+    <button onclick="goToDeviceSelection()">Start</button>
+  </div>
+
+  <!-- Device Selection -->
+  <div id="device-screen" class="screen hidden">
+    <h2>Select Your Device</h2>
+    <button onclick="selectDevice('desktop')">Computer</button>
+    <button onclick="selectDevice('mobile')">Mobile</button>
+  </div>
+
+  <!-- Mode Selection -->
+  <div id="mode-screen" class="screen hidden">
+    <h2>Select Mode</h2>
+    <button onclick="selectMode('2player')">2 Player</button>
+    <button onclick="selectMode('computer')">Computer</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="screen hidden">
+    <h1>TIC TAC TOE</h1>
+    <h3 id="turn-indicator">Player X's Turn</h3>
+    <div class="board" id="board"></div>
+    <div id="score-board">
+      <p>X: <span id="scoreX">0</span> | O: <span id="scoreO">0</span></p>
+    </div>
+    <button onclick="resetGame()">Reset Game</button>
+  </div>
+
+  <!-- Confetti canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Sounds -->
+<audio id="click-sound" src="move.wav"></audio>
+<audio id="win-sound" src="win.wav"></audio>
+<audio id="draw-sound" src="draw.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ad
+<script type="text/javascript">
+	atOptions = {
+		'key' : '765cfd3293fa0a305863248c2ede7c9f',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/765cfd3293fa0a305863248c2ede7c9f/invoke.js"></script>
